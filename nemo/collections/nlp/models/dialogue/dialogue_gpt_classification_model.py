@@ -539,7 +539,6 @@ class DialogueGPTClassificationModel(NLPModel):
                 for i in generated_tokens
             ]
             generated_tokens = torch.cat(generated_tokens, axis=0)
-            num_prompt_tokens = 0
 
         elif self.cfg.library == "megatron":
 

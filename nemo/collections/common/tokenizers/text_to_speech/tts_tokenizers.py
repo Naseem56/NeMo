@@ -788,11 +788,10 @@ class ChinesePhonemesTokenizer(BaseTokenizer):
 
         return [self._token2id[p] for p in ps]
 
-
 class ArabicCharsTokenizer(BaseCharsTokenizer):
     # fmt: off
     PUNCT_LIST = (
-        '.', '؟', '!', '،', '؛', '?', ','
+        '.', '؟', '!', '،', '؛', '?'
     )
     # fmt: on
 
@@ -857,4 +856,5 @@ class ArabicCharsTokenizer(BaseCharsTokenizer):
             cs = [space] + cs + [space]
 
         return [self._token2id[p] for p in cs]
+
 
